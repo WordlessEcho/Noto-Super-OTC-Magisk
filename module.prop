@@ -1,6 +1,6 @@
 id=NotoSuperOTC
 name=Noto CJK fonts installer (super OTC)
-version=1.2
-versionCode=3
+version=1.3
+versionCode=4
 author=Wordless Echo
 description=Modify the fonts.xml to add more font weight for CJK by just one signle font file.
