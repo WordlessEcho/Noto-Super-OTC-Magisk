@@ -5,15 +5,7 @@ else
     abort "fonts.xml not found! Cancel instation."
 fi
 
-if [ -f /sdcard/Download/NotoSansCJK.ttc ] && [ -f /sdcard/Download/NotoSerifCJK.ttc ]; then
-    cp -af /sdcard/Download/NotoSansCJK.ttc $MODPATH/system/fonts/ && cp -af /sdcard/Download/NotoSerifCJK.ttc $MODPATH/system/fonts/
-elif [ -f /sdcard/Download/NotoSansCJK.ttc ] && [ "$API" -lt "28" ]; then
-    cp -af /sdcard/Download/NotoSansCJK.ttc $MODPATH/system/fonts/
-else
-    abort "Please download and put NotoSansCJK.ttc & NotoSerifCJK.ttc(for API28+) to /sdcard/Download/!"
-fi
-
-if [ -f $MIRRORPATH$FILEPATH$FILE ]; then
+if [ "$API" -ge "28" ]; then
 sed -i '
     /<family lang=\"zh-Hans\">/,/<\/family>/ {/<\/family>/! d;
     /<\/family>/ s/.*/    <family lang="zh-Hans">\n        <font weight="100" style="normal" index="2">NotoSansCJK.ttc<\/font>\n        <font weight="300" style="normal" index="6">NotoSansCJK.ttc<\/font>\n        <font weight="350" style="normal" index="10">NotoSansCJK.ttc<\/font>\n        <font weight="400" style="normal" index="14">NotoSansCJK.ttc<\/font>\n        <font weight="500" style="normal" index="22">NotoSansCJK.ttc<\/font>\n        <font weight="700" style="normal" index="26">NotoSansCJK.ttc<\/font>\n        <font weight="900" style="normal" index="34">NotoSansCJK.ttc<\/font>\n        <font weight="400" style="normal" index="18" fallbackFor="monospace">NotoSansCJK.ttc<\/font>\n        <font weight="700" style="normal" index="30" fallbackFor="monospace">NotoSansCJK.ttc<\/font>\n        <font weight="200" style="normal" index="2" fallbackFor="serif">NotoSerifCJK.ttc<\/font>\n        <font weight="300" style="normal" index="6" fallbackFor="serif">NotoSerifCJK.ttc<\/font>\n        <font weight="400" style="normal" index="10" fallbackFor="serif">NotoSerifCJK.ttc<\/font>\n        <font weight="500" style="normal" index="14" fallbackFor="serif">NotoSerifCJK.ttc<\/font>\n        <font weight="600" style="normal" index="18" fallbackFor="serif">NotoSerifCJK.ttc<\/font>\n        <font weight="700" style="normal" index="22" fallbackFor="serif">NotoSerifCJK.ttc<\/font>\n        <font weight="900" style="normal" index="26" fallbackFor="serif">NotoSerifCJK.ttc<\/font>\n    <\/family>/};
@@ -39,6 +31,14 @@ sed -i '
     /^$/d' $MODPATH/system/etc/fonts.xml
 else
     abort "The version (API${API}) of your Android doesn't support super OTC!"
+fi
+
+if [ -f /sdcard/Download/NotoSansCJK.ttc ] && [ -f /sdcard/Download/NotoSerifCJK.ttc ]; then
+    cp -af /sdcard/Download/NotoSansCJK.ttc $MODPATH/system/fonts/ && cp -af /sdcard/Download/NotoSerifCJK.ttc $MODPATH/system/fonts/
+elif [ -f /sdcard/Download/NotoSansCJK.ttc ] && [ "$API" -lt "28" ]; then
+    cp -af /sdcard/Download/NotoSansCJK.ttc $MODPATH/system/fonts/
+else
+    abort "Please download and put NotoSansCJK.ttc & NotoSerifCJK.ttc(for API28+) to /sdcard/Download/!"
 fi
 
 set_perm_recursive $MODPATH 0 0 0755 0644
