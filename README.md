@@ -14,9 +14,33 @@ and [NotoSerifCJK.ttc.zip](https://noto-website-2.storage.googleapis.com/pkgs/No
 Enjoy! Pay attation to app title bar, drawer and Wikipedia(for Android 9+).
 
 # Developer
-Since API28 add `textFontWeight` for `TextView`. You can simply use demi light by specify `textFontWeight` to 350.
-You can use `fontFamily` such as `sans-serif-demi-light` in API28-. Note that Roboto have no 350 demi light font weight.
-So it only usable after install this module.
+- API28+: Use `textFontWeight` to specify font weight.
+- API28-: We add a alias for Noto Sans CJK DemiLight. Set `fontFamily` to `sans-serif-demi-light`.
 
-Noto serif (Android built-in) only have regular and bold. But Noto Serif CJK have multiple weight. Check out in
-[Google Font](https://fonts.google.com/specimen/Noto+Serif+SC).
+We **strongly** recommend you use `textFontWeight` as possible.
+
+## sans-serif
+
+| textFontWeight | textFontWeight | latin | CJK |
+| --- | --- | --- | --- |
+| 100 | sans-serif-thin | Roboto Thin | Noto Sans CJK Thin |
+| 300 | sans-serif-light | Roboto Light | Noto Sans CJK Light |
+| 350 | **sans-serif-demi-light** | (None) | Noto Sans CJK Demi-light |
+| 400 | sans-serif | Roboto Regular | Noto Sans CJK Regular |
+| 500 | sans-serif-medium | Roboto Medium | Noto Sans CJK Medium |
+| 900 | sans-serif-black | Roboto Black | Noto Sans CJK Black |
+| 700 | (`textStyle=bold`) | Roboto Bold | Noto Sans CJK Bold |
+| *(each weight above) | (`textStyle=italic`) | Roboto * Italic | (None) |
+
+## serif
+
+| textFontWeight | textFontWeight | latin | CJK |
+| 200 | (None) | (None) | Noto Serif CJK Extra-light |
+| 300 | (None) | (None) | Noto Serif CJK Light |
+| 400 | serif | Noto Serif Regular | Noto Serif CJK Regular |
+| 500 | (None) | (None) | Noto Serif CJK Medium |
+| 600 | (None) | (None) | Noto Serif CJK Semi-bold |
+| 900 | (None) | (None) | Noto Serif CJK Black |
+| 700 | serif-bold | Noto Serif Bold | Noto Serif CJK Bold |
+| 400 | (`textStyle=italic`) | Noto Serif Italic | (None) |
+| 700 | (`textStyle=italic`) | Noto Serif Bold Italic | (None) |
