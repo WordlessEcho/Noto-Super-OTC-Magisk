@@ -12,3 +12,11 @@ and [NotoSerifCJK.ttc.zip](https://noto-website-2.storage.googleapis.com/pkgs/No
 - Go [releases](https://github.com/WordlessEcho/Noto-Super-OTC-Installer/releases) to download this module and install in Magisk.
 
 Enjoy! Pay attation to app title bar, drawer and Wikipedia(for Android 9+).
+
+# Developer
+Since API28 add `textFontWeight` for `TextView`. You can simply use demi light by specify `textFontWeight` to 350.
+You can use `fontFamily` such as `sans-serif-demi-light` in API28-. Note that Roboto have no 350 demi light font weight.
+So it only usable after install this module.
+
+Noto serif (Android built-in) only have regular and bold. But Noto Serif CJK have multiple weight. Check out in
+[Google Font](https://fonts.google.com/specimen/Noto+Serif+SC).
