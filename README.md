@@ -35,6 +35,7 @@ We **strongly** recommend you use `textFontWeight` as possible.
 ## serif
 
 | textFontWeight | textFontWeight | latin | CJK |
+| --- | --- | --- | --- |
 | 200 | (None) | (None) | Noto Serif CJK Extra-light |
 | 300 | (None) | (None) | Noto Serif CJK Light |
 | 400 | serif | Noto Serif Regular | Noto Serif CJK Regular |
