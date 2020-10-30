@@ -1,8 +1,9 @@
-if [ -f /sbin/.magisk/mirror/system/etc/fonts.xml ]; then
+FONTS_XML="$(magisk --path)/.magisk/mirror/system/etc/fonts.xml"
+if [ -f $FONTS_XML ]; then
     mkdir -p $MODPATH/system/fonts && mkdir $MODPATH/system/etc/
-    cp -af /sbin/.magisk/mirror/system/etc/fonts.xml $MODPATH/system/etc/fonts.xml
+    cp -af $FONTS_XML $MODPATH/system/etc/fonts.xml
 else
-    abort "fonts.xml not found! Cancel instation."
+    abort "fonts.xml not found! Cancel installation."
 fi
 
 if [ "$API" -ge "28" ]; then
