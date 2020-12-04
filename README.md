@@ -5,8 +5,8 @@ That is super OTC font.
 
 # Installation
 You need at least Android 7(Nougat) to use super OTC.
-- Download [NotoSansCJK.ttc.zip](https://noto-website-2.storage.googleapis.com/pkgs/NotoSansCJK.ttc.zip).
-- For **Android 9(Pie) or above**, download both of [NotoSansCJK.ttc.zip](https://noto-website-2.storage.googleapis.com/pkgs/NotoSansCJK.ttc.zip) 
+- Download [NotoSansCJK.ttc.zip](https://github.com/googlefonts/noto-cjk/raw/master/NotoSansCJK.ttc.zip).
+- For **Android 9(Pie) or above**, download both of [NotoSansCJK.ttc.zip](https://github.com/googlefonts/noto-cjk/raw/master/NotoSansCJK.ttc.zip) 
 and [NotoSerifCJK.ttc.zip](https://noto-website-2.storage.googleapis.com/pkgs/NotoSerifCJK.ttc.zip).
 - Unzip the `.ttc` font files to `/sdcard/Download/`.
 - Go [releases](https://github.com/WordlessEcho/Noto-Super-OTC-Installer/releases) to download this module and install in Magisk.
