@@ -1,31 +1,29 @@
 # Noto CJK Fonts Installer (Super OTC)
 This is a module add more font weight for CJK(Chinese, Japanese and Korean) by modify the `fonts.xml`.
-By putting the charater to a single file, it reduce some space compare to install fonts for each languages.
-That is super OTC font.
+
+By putting the charater into a single file, it reduce some space compare to install fonts for each languages. That is super OTC font.
 
 # Installation
 You need at least Android 7(Nougat) to use super OTC.
-- Download [NotoSansCJK.ttc.zip](https://github.com/googlefonts/noto-cjk/raw/master/NotoSansCJK.ttc.zip).
-- For **Android 9(Pie) or above**, download both of [NotoSansCJK.ttc.zip](https://github.com/googlefonts/noto-cjk/raw/master/NotoSansCJK.ttc.zip) 
-and [NotoSerifCJK.ttc.zip](https://noto-website-2.storage.googleapis.com/pkgs/NotoSerifCJK.ttc.zip).
-- Unzip the `.ttc` font files to `/sdcard/Download/`.
-- Go [releases](https://github.com/WordlessEcho/Noto-Super-OTC-Installer/releases) to download this module and install in Magisk.
 
-Enjoy! Pay attation to app title bar, drawer and Wikipedia(for Android 9+).
+Go [releases](https://github.com/WordlessEcho/Noto-Super-OTC-Installer/releases) to download this module and install in Magisk.
+
+[Try](https://github.com/RikkaApps/FontProvider/releases/tag/v1.0.7)
 
 # Developer
-- API28+: Use `textFontWeight` to specify font weight.
-- API28-: We add a alias for Noto Sans CJK DemiLight. Set `fontFamily` to `sans-serif-demi-light`.
-
 We **strongly** recommend you use `textFontWeight` as possible.
 
+DemiLight is Normal in Source Han Sans. More about DemiLight: [思源黑体的 DemiLight / Normal 字重因何而生？ - 孫志貴的回答 - 知乎](https://www.zhihu.com/question/24607502/answer/28362461)
+
 ## sans-serif
+
+*Note: Roboto is variable font in Android 12.*
 
 | textFontWeight | textFontWeight | latin | CJK |
 | --- | --- | --- | --- |
 | 100 | sans-serif-thin | Roboto Thin | Noto Sans CJK Thin |
 | 300 | sans-serif-light | Roboto Light | Noto Sans CJK Light |
-| 350 | **sans-serif-demi-light** | (None) | Noto Sans CJK Demi-light |
+| 350 | (None) | (None) | Noto Sans CJK Demi-light |
 | 400 | sans-serif | Roboto Regular | Noto Sans CJK Regular |
 | 500 | sans-serif-medium | Roboto Medium | Noto Sans CJK Medium |
 | 900 | sans-serif-black | Roboto Black | Noto Sans CJK Black |
