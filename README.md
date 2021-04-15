@@ -1,4 +1,4 @@
-# Noto CJK Fonts Installer (Super OTC)
+# Noto CJK Super OTC Magisk
 This is a module add more font weight for CJK(Chinese, Japanese and Korean) by modify the `fonts.xml`.
 
 By putting the charater into a single file, it reduce some space compare to install fonts for each languages. That is super OTC font.
