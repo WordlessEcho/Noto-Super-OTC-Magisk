@@ -17,7 +17,7 @@ DemiLight is Normal in Source Han Sans. More about DemiLight: [思源黑体的 D
 
 ## sans-serif
 
-*Note: Roboto is variable font in Android 12.*
+*Note: Roboto is variable font since Android 12.*
 
 | textFontWeight | textFontWeight | latin | CJK |
 | --- | --- | --- | --- |
