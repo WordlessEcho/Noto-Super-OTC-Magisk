@@ -26,8 +26,8 @@ DemiLight is Normal in Source Han Sans. More about DemiLight: [思源黑体的 D
 | 350 | (None) | (None) | Noto Sans CJK Demi-light |
 | 400 | sans-serif | Roboto Regular | Noto Sans CJK Regular |
 | 500 | sans-serif-medium | Roboto Medium | Noto Sans CJK Medium |
-| 900 | sans-serif-black | Roboto Black | Noto Sans CJK Black |
 | 700 | (`textStyle=bold`) | Roboto Bold | Noto Sans CJK Bold |
+| 900 | sans-serif-black | Roboto Black | Noto Sans CJK Black |
 | *(each weight above) | (`textStyle=italic`) | Roboto * Italic | (None) |
 
 ## serif
@@ -39,7 +39,7 @@ DemiLight is Normal in Source Han Sans. More about DemiLight: [思源黑体的 D
 | 400 | serif | Noto Serif Regular | Noto Serif CJK Regular |
 | 500 | (None) | (None) | Noto Serif CJK Medium |
 | 600 | (None) | (None) | Noto Serif CJK Semi-bold |
-| 900 | (None) | (None) | Noto Serif CJK Black |
 | 700 | serif-bold | Noto Serif Bold | Noto Serif CJK Bold |
+| 900 | (None) | (None) | Noto Serif CJK Black |
 | 400 | (`textStyle=italic`) | Noto Serif Italic | (None) |
 | 700 | (`textStyle=italic`) | Noto Serif Bold Italic | (None) |
